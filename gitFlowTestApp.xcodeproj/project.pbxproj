@@ -13,6 +13,12 @@
 		2BBCD85C2593F49200513EA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BBCD85A2593F49200513EA6 /* Main.storyboard */; };
 		2BBCD85E2593F49400513EA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BBCD85D2593F49400513EA6 /* Assets.xcassets */; };
 		2BBCD8612593F49400513EA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BBCD85F2593F49400513EA6 /* LaunchScreen.storyboard */; };
+		2BBCD86F259405EC00513EA6 /* TestFeature1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBCD869259405EC00513EA6 /* TestFeature1Presenter.swift */; };
+		2BBCD870259405EC00513EA6 /* TestFeature1Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBCD86A259405EC00513EA6 /* TestFeature1Worker.swift */; };
+		2BBCD871259405EC00513EA6 /* TestFeature1Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBCD86B259405EC00513EA6 /* TestFeature1Router.swift */; };
+		2BBCD872259405EC00513EA6 /* TestFeature1Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBCD86C259405EC00513EA6 /* TestFeature1Models.swift */; };
+		2BBCD873259405EC00513EA6 /* TestFeature1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBCD86D259405EC00513EA6 /* TestFeature1ViewController.swift */; };
+		2BBCD874259405EC00513EA6 /* TestFeature1Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBCD86E259405EC00513EA6 /* TestFeature1Interactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		2BBCD85D2593F49400513EA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BBCD8602593F49400513EA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BBCD8622593F49400513EA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BBCD869259405EC00513EA6 /* TestFeature1Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFeature1Presenter.swift; sourceTree = "<group>"; };
+		2BBCD86A259405EC00513EA6 /* TestFeature1Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFeature1Worker.swift; sourceTree = "<group>"; };
+		2BBCD86B259405EC00513EA6 /* TestFeature1Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFeature1Router.swift; sourceTree = "<group>"; };
+		2BBCD86C259405EC00513EA6 /* TestFeature1Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFeature1Models.swift; sourceTree = "<group>"; };
+		2BBCD86D259405EC00513EA6 /* TestFeature1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFeature1ViewController.swift; sourceTree = "<group>"; };
+		2BBCD86E259405EC00513EA6 /* TestFeature1Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFeature1Interactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +75,22 @@
 				2BBCD85D2593F49400513EA6 /* Assets.xcassets */,
 				2BBCD85F2593F49400513EA6 /* LaunchScreen.storyboard */,
 				2BBCD8622593F49400513EA6 /* Info.plist */,
+				2BBCD876259405FD00513EA6 /* feature1 */,
 			);
 			path = gitFlowTestApp;
+			sourceTree = "<group>";
+		};
+		2BBCD876259405FD00513EA6 /* feature1 */ = {
+			isa = PBXGroup;
+			children = (
+				2BBCD869259405EC00513EA6 /* TestFeature1Presenter.swift */,
+				2BBCD86A259405EC00513EA6 /* TestFeature1Worker.swift */,
+				2BBCD86B259405EC00513EA6 /* TestFeature1Router.swift */,
+				2BBCD86C259405EC00513EA6 /* TestFeature1Models.swift */,
+				2BBCD86D259405EC00513EA6 /* TestFeature1ViewController.swift */,
+				2BBCD86E259405EC00513EA6 /* TestFeature1Interactor.swift */,
+			);
+			path = feature1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +164,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BBCD8592593F49200513EA6 /* ViewController.swift in Sources */,
+				2BBCD871259405EC00513EA6 /* TestFeature1Router.swift in Sources */,
+				2BBCD874259405EC00513EA6 /* TestFeature1Interactor.swift in Sources */,
 				2BBCD8552593F49200513EA6 /* AppDelegate.swift in Sources */,
 				2BBCD8572593F49200513EA6 /* SceneDelegate.swift in Sources */,
+				2BBCD870259405EC00513EA6 /* TestFeature1Worker.swift in Sources */,
+				2BBCD86F259405EC00513EA6 /* TestFeature1Presenter.swift in Sources */,
+				2BBCD873259405EC00513EA6 /* TestFeature1ViewController.swift in Sources */,
+				2BBCD872259405EC00513EA6 /* TestFeature1Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +325,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = miljana.gitFlowTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -312,6 +345,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = miljana.gitFlowTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
