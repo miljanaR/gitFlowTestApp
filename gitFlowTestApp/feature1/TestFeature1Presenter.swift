@@ -10,6 +10,7 @@
 //  see http://clean-swift.com
 //
 
+// ja sam neka verzija 2.1.17
 import UIKit
 
 protocol TestFeature1PresentationLogic
