@@ -1,6 +1,26 @@
 
 # Created by https://www.toptal.com/developers/gitignore/api/swift,xcode
 # Edit at https://www.toptal.com/developers/gitignore?templates=swift,xcode
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+<%- if config[:ext] -%>
+*.bundle
+*.so
+*.o
+*.a
+mkmf.log
+<%- end -%>
+<%- if config[:test] == "rspec" -%>
+
+# rspec failure tracking
+.rspec_status
+<%- end -%>
 
 ### Swift ###
 # Xcode
